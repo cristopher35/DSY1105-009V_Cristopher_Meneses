@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mockups: CIM UC Móvil</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f3efe8;--fg:#2b2b2b;--mut:#666;--g:#2f5d3a;--gl:#e6eee2;--b:#8b5e3c;--cd:#fff;--ln:#e2ddd3;--er:#b3261e}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1b19;--fg:#eee;--mut:#aaa}}
+:root[data-theme="dark"]{--bg:#1c1b19;--fg:#eee;--mut:#aaa}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:20px 14px 40px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:28px 0 10px;color:var(--g)}
+@media (prefers-color-scheme:dark){h2{color:#9fcf9f}}
+p.i{margin:0;color:var(--mut);font-size:14px}
+.row{display:flex;flex-wrap:wrap;gap:22px;justify-content:center}
+figure{margin:0;width:300px}
+figcaption{font-size:13px;margin-top:8px;text-align:center}
+figcaption small{color:var(--mut)}
+.ph{width:300px;height:580px;border:8px solid #222;border-radius:28px;background:#faf7f2;color:#2b2b2b;display:flex;flex-direction:column;overflow:hidden;position:relative;font-size:12px}
+.bar{background:var(--g);color:#fff;padding:12px 12px;display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px}
+.bar .bt{flex:1}
+.body{flex:1;padding:10px 12px;overflow:hidden;position:relative}
+.nav{display:flex;border-top:1px solid var(--ln);background:#fff}
+.nav b{flex:1;text-align:center;font-size:9px;font-weight:500;padding:6px 0;color:#777}
+.nav b i{display:block;font-style:normal;font-size:16px}
+.nav b.on{color:var(--g);font-weight:700}
+.sb{background:#fff;border:1px solid var(--ln);border-radius:20px;padding:9px 12px;color:#888;margin-bottom:8px;display:flex;justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:4px 0 8px}
+.chip{background:var(--gl);color:var(--g);border-radius:14px;padding:4px 9px;font-size:11px}
+.chip.on{background:var(--g);color:#fff}
+.chip.w{background:#f3e3d3;color:var(--b)}
+.sec{font-weight:700;font-size:13px;margin:8px 0 5px;display:flex;justify-content:space-between}
+.sec a{color:var(--b);font-weight:500;font-size:11px}
+.card{background:var(--cd);border:1px solid var(--ln);border-radius:10px;padding:6px;display:flex;gap:8px;margin-bottom:6px;align-items:center}
+.img{width:38px;height:38px;border-radius:8px;background:linear-gradient(135deg,#c9a77c,#8b5e3c);flex:none}
+.tx{flex:1;min-width:0}.t{font-weight:600;font-size:12px}.s{color:#777;font-size:10.5px}
+.tg{display:inline-block;background:var(--gl);color:var(--g);border-radius:8px;padding:1px 6px;font-size:9.5px;margin-top:2px}
+.tg.c{background:#eee;color:#777}.fv{color:var(--b);font-size:16px}
+.hero{height:90px;border-radius:10px;background:linear-gradient(135deg,#c9a77c,#8b5e3c);margin-bottom:8px}
+.av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#a8c3a0,#2f5d3a);margin:2px auto 6px}
+.ttl{font-weight:700;font-size:15px;margin:2px 0}
+.txt{font-size:11px;color:#444;line-height:1.35;margin:4px 0}
+.mini{display:flex;gap:6px}.mini div{flex:1;background:#fff;border:1px solid var(--ln);border-radius:8px;padding:6px;font-size:10.5px;font-weight:600}
+.mini small{display:block;color:#777;font-weight:400}
+.btn{background:var(--g);color:#fff;border-radius:20px;text-align:center;padding:10px;font-weight:600;font-size:13px}
+.btn.o{background:none;border:1px solid var(--g);color:var(--g)}.btn.d{background:#ccc;color:#777}
+.fix{position:absolute;left:12px;right:12px;bottom:10px}
+.fld{background:#fff;border:1px solid var(--ln);border-radius:8px;padding:7px 9px;margin-bottom:6px;color:#888}
+.fld.e{border-color:var(--er)}.err{color:var(--er);font-size:10px;margin:-3px 0 5px}
+.lb{font-size:10.5px;font-weight:600;margin-bottom:2px}
+.warn{background:#fff4d6;border-radius:8px;padding:6px 8px;font-size:10.5px;margin:6px 0}
+.dim{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#faf7f2;border-radius:18px 18px 0 0;padding:12px}
+.cd{display:flex;gap:5px;justify-content:center;margin:12px 0}.cd span{width:30px;height:38px;border:1px solid var(--ln);background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.ctr{text-align:center;margin-top:120px;color:#666}.ctr .big{font-size:40px;color:var(--g)}
+.sk{height:44px;border-radius:10px;background:#e9e4da;margin-bottom:6px}
+</style>
+</head>
+<body>
+<main>
+<h1>Mockups: CIM UC Móvil</h1>
+<p class="i">Documento 6 · Versión preliminar · Pantallas P01 a P09 y estados. Datos ficticios.</p>
+<div id="app"></div>
+</main>
+<script>
+const nav=a=>`<div class="nav">${[['⌂','Inicio'],['⌕','Buscar'],['✦','Oportunidades'],['♡','Favoritos']].map(([i,l])=>`<b class="${l==a?'on':''}"><i>${i}</i>${l}</b>`).join('')}</div>`;
+const chip=(t,on,w)=>`<span class="chip${on?' on':''}${w?' w':''}">${t}</span>`;
+const chips=(a,on=[])=>`<div class="chips">${a.map(x=>chip(x,on.includes(x))).join('')}</div>`;
+const card=(t,s,tag,fav,c)=>`<div class="card"><div class="img"></div><div class="tx"><div class="t">${t}</div><div class="s">${s}</div>${tag?`<span class="tg${c?' c':''}">${tag}</span>`:''}</div><span class="fv">${fav?'♥':'♡'}</span></div>`;
+const bar=(t,back,r='')=>`<div class="bar">${back?'<span>←</span>':''}<span class="bt">${t}</span>${r}</div>`;
+const F=(id,cap,note,inner)=>`<figure><div class="ph">${inner}</div><figcaption><b>${id}</b> ${cap}<br><small>${note}</small></figcaption></figure>`;
+const areas=['Mediana altura','Durabilidad','Sustentabilidad','Diseño','Prefabricación','Normativa'];
+const sb=(t='Buscar en CIM UC…',x='⌕')=>`<div class="sb"><span>${t}</span><span>${x}</span></div>`;
+
+const flujo=[
+F('P01','Inicio','RF-01 · Lleva a P02, P04 y P05',bar('CIM UC Móvil')+`<div class="body">${sb()}${chips(areas)}<div class="sec">Capacidades destacadas</div>${card('Ensayos estructurales','Comportamiento de elementos','Mediana altura')}${card('Protección de la madera','Durabilidad y tratamientos','Durabilidad')}${card('Huella de carbono','Análisis de ciclo de vida','Sustentabilidad')}<div class="sec">Oportunidades abiertas <a>Ver todas</a></div>${card('Ensayos para constructoras','Límite: 30 nov 2026','Colaboración')}</div>`+nav('Inicio')),
+F('P02','Buscar','RF-02 · Lleva a P03 y P04',bar('Buscar')+`<div class="body">${sb('madera','✕')}<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span class="s">7 resultados</span>${chip('Filtros (2)',1)}</div>${card('Edificio experimental CLT','2025 · En curso','Proyecto',0)}${card('Ensayos estructurales','Comportamiento de elementos','Capacidad',1)}${card('Guía de diseño en madera','2025 · Guía','Publicación',0)}${card('Ana Rojas','Investigadora principal','Integrante',0)}</div>`+nav('Buscar')),
+F('P03','Filtros','RF-03 · Aplicar vuelve a P02',bar('Buscar')+`<div class="body">${sb('madera','✕')}${card('Edificio experimental CLT','2025 · En curso','Proyecto')}${card('Ensayos estructurales','Comportamiento','Capacidad')}<div class="dim"></div><div class="sheet"><div class="ttl">Filtros</div><div class="lb">Tipo de contenido</div>${chips(['Capacidades','Proyectos','Integrantes','Publicaciones','Oportunidades'],['Proyectos','Capacidades'])}<div class="lb">Área temática</div>${chips(areas,['Mediana altura'])}<div style="display:flex;gap:8px;margin-top:8px"><div class="btn o" style="flex:1">Limpiar</div><div class="btn" style="flex:1">Aplicar</div></div></div></div>`+nav('Buscar')),
+F('P04','Detalle de proyecto','RF-04, RF-05 · Lleva a otros detalles',bar('Proyecto',1,'<span>♥</span>')+`<div class="body"><div class="hero"></div><div class="ttl">Edificio experimental CLT</div>${chip('Proyecto',0,1)} ${chip('Mediana altura')} ${chip('En curso')}<div class="txt">Prototipo de edificio de madera contralaminada para evaluar desempeño estructural y sísmico. 2025.</div><div class="sec">Capacidades (1)</div><div class="mini"><div>Ensayos estructurales<small>Mediana altura</small></div></div><div class="sec">Integrantes (2)</div><div class="mini"><div>Ana Rojas<small>Inv. principal</small></div><div>Diego Fuentes<small>Ingeniero</small></div></div><div class="sec">Publicaciones (1)</div><div class="mini"><div>Guía de diseño<small>2025 · Guía</small></div></div></div>`),
+F('P04','Detalle de integrante','Con botón Contactar · Lleva a P06',bar('Integrante',1,'<span>♡</span>')+`<div class="body"><div class="av"></div><div class="ttl" style="text-align:center">Ana Rojas</div><div class="s" style="text-align:center">Investigadora principal</div><div style="text-align:center;margin:6px 0">${chip('Mediana altura')} ${chip('Durabilidad')}</div><div class="txt">Investigadora en estructuras de madera. Coordina ensayos y proyectos con empresas.</div><div class="txt"><b>Contacto:</b> a.rojas@ejemplo.cl (simulado)</div><div class="sec">Proyectos (1)</div><div class="mini"><div>Edificio experimental CLT<small>2025 · En curso</small></div></div><div class="sec">Publicaciones (1)</div><div class="mini"><div>Guía de diseño<small>2025 · Guía</small></div></div><div class="fix btn">Contactar</div></div>`),
+F('P06','Contacto (con errores)','RF-07 · Enviar lleva a P07',bar('Contactar',1)+`<div class="body"><div class="lb">Para: Ana Rojas · a.rojas@ejemplo.cl</div><div class="fld">Asunto: Consulta sobre Edificio experimental CLT</div><div class="lb">Nombre</div><div class="fld">Camila Soto</div><div class="lb">Correo</div><div class="fld e">camila.soto@</div><div class="err">Ingresa un correo válido</div><div class="lb">Organización (opcional)</div><div class="fld">Constructora Ejemplo</div><div class="lb">Mensaje</div><div class="fld e" style="height:54px">Hola</div><div class="err">Escribe al menos 10 caracteres</div><div class="warn">Envío simulado, no se enviará ningún mensaje real.</div><div class="btn">Enviar</div></div>`),
+F('P07','Confirmación','RF-07 · Volver regresa al detalle',bar('Contacto enviado')+`<div class="body"><div class="ctr"><div class="big">✓</div><div class="ttl">Mensaje registrado (simulado)</div><div class="txt">Para: Ana Rojas<br>Asunto: Consulta sobre Edificio experimental CLT</div></div><div class="fix btn">Volver</div></div>`),
+];
+const otras=[
+F('P05','Oportunidades','RF-06 · Lleva a P04',bar('Oportunidades')+`<div class="body">${chips(['Todas','Colaboración','Formación'],['Todas'])}${card('Ensayos para constructoras','Límite: 30 nov 2026','Colaboración · Abierta',0)}${card('Piloto de prefabricación','Límite: 15 dic 2026','Colaboración · Abierta',0)}${card('Curso de diseño en madera','Cerró: 10 ago 2026','Formación · Cerrada',0,1)}<div class="btn d" style="margin-top:8px">Contactar (deshabilitado)</div></div>`+nav('Oportunidades')),
+F('P08','Favoritos','RF-08 · Lleva a P04',bar('Favoritos')+`<div class="body">${chips(['Todos','Capacidades','Proyectos','Integrantes'],['Todos'])}${card('Ensayos estructurales','Comportamiento de elementos','Capacidad',1)}${card('Edificio experimental CLT','2025 · En curso','Proyecto',1)}${card('Ana Rojas','Investigadora principal','Integrante',1)}</div>`+nav('Favoritos')),
+F('P09','Ingreso simulado (opcional)','RF-09 · Lleva a P01',`<div class="body"><div class="ctr" style="margin-top:70px"><div class="ttl" style="font-size:20px;color:var(--g)">CIM UC Móvil</div><div class="txt">Ingresa con tu e-token (simulado)</div><div class="cd"><span>4</span><span>8</span><span>1</span><span>0</span><span>2</span><span>7</span></div></div><div class="btn">Ingresar con e-token (simulado)</div><div class="btn o" style="margin-top:8px">Continuar como invitado</div></div>`),
+];
+const estados=[
+F('Estado','Cargando','Mientras se obtienen los datos',bar('Buscar')+`<div class="body">${sb('madera','✕')}<div class="s" style="text-align:center;margin:8px">Cargando…</div><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div></div>`+nav('Buscar')),
+F('Estado','Sin resultados','Con acción para limpiar',bar('Buscar')+`<div class="body">${sb('xyz','✕')}<div class="ctr"><div class="big" style="color:#999">⌕</div><div class="ttl">Sin resultados</div><div class="txt">Prueba con otra palabra o quita los filtros.</div><div class="btn o" style="margin:10px 40px">Limpiar búsqueda</div></div></div>`+nav('Buscar')),
+F('Estado','Favoritos vacío','Invita a guardar contenidos',bar('Favoritos')+`<div class="body"><div class="ctr"><div class="big" style="color:#999">♡</div><div class="ttl">Aún no tienes favoritos</div><div class="txt">Toca el corazón en cualquier contenido para guardarlo aquí.</div></div></div>`+nav('Favoritos')),
+F('Estado','Error al cargar','Con botón Reintentar',bar('Inicio')+`<div class="body"><div class="ctr"><div class="big" style="color:var(--er)">!</div><div class="ttl">No pudimos cargar los datos</div><div class="txt">Revisa tu conexión e inténtalo de nuevo.</div><div class="btn" style="margin:10px 60px">Reintentar</div></div></div>`+nav('Inicio')),
+];
+const sec=(t,a)=>`<h2>${t}</h2><div class="row">${a.join('')}</div>`;
+document.getElementById('app').innerHTML=sec('Flujo principal de la demo',flujo)+sec('Otras pantallas',otras)+sec('Estados',estados);
+</script>
+</body>
+</html>
